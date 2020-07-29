@@ -1,0 +1,4 @@
+#Tue Jul 28 23:51:11 PDT 2020
+base.0=/home/prasad/SAL/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
