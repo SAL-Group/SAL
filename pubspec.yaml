@@ -23,6 +23,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+# add flutter_screenutil
+  flutter_screenutil: ^0.4.2
+  provider: ^2.0.0
+  google_fonts: ^1.1.0
+  flutter_signin_button: ^1.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -45,8 +50,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/image8.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
