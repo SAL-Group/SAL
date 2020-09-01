@@ -1,0 +1,33 @@
+{
+    "IdentityManager": {
+        "Default": {}
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "us-east-1:79cc8818-a113-49e0-a490-877c98d31013",
+                "Region": "us-east-1"
+            }
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "us-east-1_uNo0zM9FV",
+            "AppClientId": "7v0cn52ogq76mh0lvjjjpksjf0",
+            "AppClientSecret": "1j7rvcgock7d8r1vs0n239p0h0pu0nejla7l091i5poj5id3362n",
+            "Region": "us-east-1"
+        }
+    },
+    "Auth": {
+        "Default": {
+          "OAuth": {
+            "WebDomain": "sal-app.auth.us-east-1.amazoncognito.com",
+            "AppClientId": "7v0cn52ogq76mh0lvjjjpksjf0",
+            "SignInRedirectURI": "salApp://",
+            "SignOutRedirectURI": "salApp://",
+            "responseType": "token",
+            "Scopes": ["openid", "email"]
+          }
+        }
+      }
+}

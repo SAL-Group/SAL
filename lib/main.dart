@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sal/Home/SALHomePage.dart';
-import 'package:sal/login/SEASigupPage.dart';
 import 'login/SALLoginPage.dart';
 import 'services/SALAuthService.dart';
 
@@ -16,6 +15,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -25,13 +25,18 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-    home: FutureBuilder(
+      home: FutureBuilder(
       future: Provider.of<SALAuthService>(context).getUser(),
-      builder:(context, AsyncSnapshot snapshot) {
+      builder:(context, AsyncSnapshot<bool> snapshot) {
          if (snapshot.connectionState == ConnectionState.done) {
-            return snapshot.hasData ? SALHomePage() : SALLoginPage();
+            return (snapshot.hasData && snapshot.data == true) ? SALHomePage() : SALLoginPage();
           } else {
-            return Container(color: Colors.white);
+            return Center(
+                    child: Container(
+                      child: CircularProgressIndicator(),
+                      alignment: Alignment(0.0, 0.0),
+                    ),
+                  );
           }
       },
     ),
