@@ -76,6 +76,20 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_cognito_plugin:
+    dependency: "direct main"
+    description:
+      name: flutter_cognito_plugin
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.2.0"
+  flutter_progress_hud:
+    dependency: "direct main"
+    description:
+      name: flutter_progress_hud
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.2"
   flutter_screenutil:
     dependency: "direct main"
     description:
@@ -137,6 +151,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.16.1"
+  logging:
+    dependency: transitive
+    description:
+      name: logging
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.11.4"
   matcher:
     dependency: transitive
     description:
@@ -214,6 +235,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.2"
+  plugin_scaffold:
+    dependency: transitive
+    description:
+      name: plugin_scaffold
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.1.0"
   process:
     dependency: transitive
     description:
