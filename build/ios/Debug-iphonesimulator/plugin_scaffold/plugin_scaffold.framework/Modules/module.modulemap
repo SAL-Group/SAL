@@ -1,0 +1,11 @@
+framework module plugin_scaffold {
+  umbrella header "plugin_scaffold-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module plugin_scaffold.Swift {
+    header "plugin_scaffold-Swift.h"
+    requires objc
+}
